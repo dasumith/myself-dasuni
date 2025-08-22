@@ -1,0 +1,72 @@
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif;
+   background: lightgrey;
+    color: black; }
+
+nav { display: flex;
+   justify-content: space-between;
+    align-items: center;
+     padding: 2rem 4rem;
+      background: indigo; }
+nav .logo { color: lightgrey; }
+nav ul { display: flex; 
+  list-style: none;
+   gap: 1rem; }
+nav ul a { color: lightgrey;
+   text-decoration: none;
+    padding: 2rem;
+  font-size:larger }
+nav ul a.active, nav ul a:hover { color: black; }
+
+.home { text-align: center;
+   padding: 2rem; }
+.home .profile { width: 200px; 
+  height: 200px;
+   border-radius: 50%; 
+   object-fit: cover; 
+   margin-bottom: 6rem; }
+.home h1 span { color: black; }
+
+.skills { text-align: center;
+   padding: 4rem; }
+.skills ul { display: flex; 
+  justify-content: center;
+   gap: 3rem;
+    list-style: none;
+     flex-wrap: wrap; }
+.skills li { background: indigo;
+   padding: 0.5rem 1rem;
+    border-radius: 5px; 
+  color:lightgrey;}
+
+.blog { text-align: center;
+    padding: 16rem;
+  }
+
+.btn { display: inline-block;
+  padding: 1rem 2rem;
+   background: indigo; color: #fff;
+    border-radius: 7px;
+     text-decoration: none; }
+.btn:hover { background: lightgrey; }
+
+.contact { max-width: 800px;
+   margin: auto;
+   padding: 10rem; 
+   text-align: center; }
+.contact form { display: flex;
+   flex-direction: column;
+    gap: 1rem; }
+.contact input, .contact textarea { padding: 0.7rem; border: 1px solid lightgrey; border-radius: 7px; }
+.hidden { display: none; }
+
+footer { text-align: center;
+   padding: 1rem; 
+   background: indigo; color:lightgrey; 
+   margin-top: 2rem; }
+
+@media(max-width: 600px) {
+  nav { flex-direction: column; gap: 1rem; }
+  .skills ul { flex-direction: column; }
+}
